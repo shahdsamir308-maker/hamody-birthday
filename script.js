@@ -31,7 +31,7 @@ const config = {
     {
       question: "جواب على السؤال ده صح و هتلاقي مفاجأه حلوه",
       options: [
-        "خروج مع صحابك",
+        "خروجه مع صحابك",
         "تنام",
         "نخرج سوا حتى لو 2 بليل"
       ],
@@ -41,13 +41,12 @@ const config = {
 
   // ========== الصور ==========
   photos: [
-    { src: "2.jpeg", date: " 6 JUN 2025 " },
+    { src: "2.jpeg", date: " 8 JUN 2025 " },
     { src: "5.jpeg", date: " 6 JUL 2025 " },
     { src: "1.jpeg", date: " 7 NOV 2025 " },
-    { src: "4.jpeg", date: " 6 JUL 2025 " },
-    { src: "3.jpeg", date: " 6 JUN 2025 " },
+    { src: "3.jpeg", date: " 8 JUN 2025 " },
     { src: "9.jpeg", date: " 3 JUL 2025 " },
-    { src: "8.jpeg", date: " 6 JUN 2025 " },
+    { src: "8.jpeg", date: " 8 JUN 2025 " },
     { src: "6.jpeg", date: " 6 JUL 2025 " },
     { src: "7.jpeg", date: " 10 JUL 2025 " }
   ]
