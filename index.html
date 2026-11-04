@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamody's Day ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========== صفحة الترحيب ========== -->
+  <section id="welcome" class="page active">
+    <div class="welcome-content">
+      <p class="small-title">A SPECIAL DAY</p>
+      <h1>Today is <span id="name">Hamody</span>'s Birthday</h1>
+      <p class="subtitle">Let the celebration begin ✨</p>
+      <button onclick="startQuiz()" class="main-btn">ابدأ الكويز ←</button>
+    </div>
+  </section>
+
+  <!-- ========== صفحة الكويز ========== -->
+  <section id="quiz" class="page">
+    <div class="quiz-container">
+      <h2>Quick Quiz for <span id="name2">Hamody</span>!</h2>
+      <p class="quiz-hint">جاوب صح عشان تعرف تعدي</p>
+
+      <div id="question-box">
+        <!-- الأسئلة هتتولد هنا بالـ JavaScript -->
+      </div>
+
+      <button id="submit-btn" class="main-btn" onclick="checkAnswers()" style="display:none;">
+        تأكيد الإجابات
+      </button>
+    </div>
+  </section>
+
+  <!-- ========== رسالة الخطأ ========== -->
+  <div id="error-modal" class="modal">
+    <div class="modal-content">
+      <div class="emoji">😤</div>
+      <p>طب مفيش عيد ميلاد 🎂</p>
+      <button onclick="closeModal()" class="main-btn">حاول تاني</button>
+    </div>
+  </div>
+
+  <!-- ========== صفحة الاحتفال ========== -->
+  <section id="celebration" class="page">
+    <div class="confetti" id="confetti"></div>
+
+    <div class="celeb-header">
+      <p class="small-title">A CELEBRATION</p>
+      <h1>Let's Celebrate <span id="name3">Hamody</span>! 🎂</h1>
+      <button class="main-btn" onclick="document.getElementById('memories').scrollIntoView({behavior:'smooth'})">
+        CELEBRATE 🎉
+      </button>
+    </div>
+
+    <!-- قسم الذكريات -->
+    <div id="memories" class="section">
+      <p class="section-label">MEMORIES</p>
+      <h2>Our Beautiful Moments</h2>
+      <div class="gallery" id="gallery">
+        <!-- الصور هتتحط هنا -->
+      </div>
+    </div>
+
+    <!-- الرسالة -->
+    <div class="section message-section">
+      <p class="section-label">من القلب</p>
+      <h2 id="message-title"> </h2>
+      <div class="message-box">
+        <p id="arabic-message">
+كل سنه و أنت طيب و بخير يا حبيبي 🥳❤️ كل سنه و أنت معايا و عيد ميلادك الجاى نكون سوا فى بيتنا إن شاء الله 🥰 بتمنالك التوفيق و السعاده فى حياتك الجايه لان سعادتك هى سعادتى و نجاحك نجاحى✨❤️  تأكد انى فخوره بك و بكل خطوة بتعملها فى حياتنا و واثقه أنك هتكون أنجح حد فى الدنيا كلها 🌎❤️ ربنا يديمك فى حياتى العمر كله و نتشارك أيامنا و تفاصيلنا الصغيره و نبنى سوا ذكريات جميله  بحبك 🥹❤️        </p>
+        <hr>
+        <p id="english-message">
+          Happy Birthday katkoty 🥰❤️
+          <br><br>
+        </p>
+        <p class="signature">❤️ Your girl<br><span id="your-name">Shahodaa</span></p>
+      </div>
+    </div>
+
+    <!-- مكان الفيديو -->
+    <div class="section">
+      <p class="section-label">A MESSAGE</p>
+      <h2>Watch This 🎬</h2>
+      <div class="video-box">
+        <video id="birthday-video" controls poster="">
+          <!-- حطي لينك الفيديو هنا أو ارفعي الملف -->
+          <source src="H.mp4" type="video/mp4">
+          متصفحك مش بيدعم تشغيل الفيديو
+        </video>
+      </div>
+    </div>
+
+    <footer>
+      Made With Love❤️ · Hamody's Day 2026
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
